@@ -6,12 +6,21 @@
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
   font-size: 10px;
 }
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+  height: 100vh;
+  overflow: hidden;
+}
+.container-manual{
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  height: 100%;margin-left: 0;
+  margin-right: 0;
 }
 .container {
   max-width: 1440px;
