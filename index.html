@@ -1,286 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codium.io</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon" />
-  <title>Codium.io</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-
-<body>
-  <header class="container header">
-    <a href="#" class="header__logo">
-      <img src="./assets/images/site-logo.svg" alt="codium logo" />
-    </a>
-    <nav class="header_nav">
-      <ul class="header-nav__list">
-        <li class="header-nav__item">
-          <a href="#home" class="hader-nav_link">Home</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="#services" class="hader-nav_link">Services</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="#projects" class="hader-nav_link">Projects</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="#testimonials" class="hader-nav_link">Testimonials</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="#team" class="hader-nav_link">Team</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="#contacts" class="hader-nav_link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header-signup_mode">
-      <img src="./assets/images/dark-mode.svg" alt="mode changer logo" class="mode-changer">
-      <div class="header_signup">
-        <img src="./assets/images/signup-img.svg" alt="signup image">
-        Sign up
-      </div>
-    </div>
-  </header>
-  <main class="container">
-    <section class="section hero">
-      <div class="hero-text-wrapper">
-        <span>
-          the
-        </span>
-        <h2 class="hero__title">
-          CODIUM TEAM
-        </h2>
-        <p class="hero__quote">
-          ...we are strong community
-        </p>
-      </div>
-      <a href="#services" class="btn hero-enter">
-        ENTER
+  <body>
+   <div class="container-manual">
+    <header class="container header">
+      <a href="#" class="header__logo">
+        <img src="./assets/images/site-logo.svg" alt="codium logo" />
       </a>
-      <div class="ocean">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-      </div>
-      <img src="./assets//images/shapes.svg" alt="abstaract shapes" class="hero-abstarct-shapes">
-    </section>
-
-    <section class="section services" id="services">
-      <h2 class="services_title">Our services</h2>
-      <hr class="services_separator">
-      <div class="services_list">
-        <div class="services_item">
-          <img src="./assets/images/Design.svg" alt="web design" class="services_image">
-          <h2 class="service_title">Web design</h2>
-          <p class="service_desc">
-            You can hire web designer from
-            our website. Design websites,
-            logos, business cards, presentations
-            and more.
-          </p>
-          <button class="btn  read_more">Read more</button>
-        </div>
-
-        <div class="services_item">
-          <img src="./assets/images/Web.svg" alt="web development" class="services_image">
-          <h2 class="service_title">Web Development</h2>
-          <p class="service_desc">
-            You can hire frontend or backend
-            developers. We create modern websites
-            with popular technologies.
-          </p>
-          <button class="btn read_more ">Read more</button>
-        </div>
-
-        <div class="services_item">
-          <img src="./assets/images/Bookmark.svg" alt="web development" class="services_image">
-          <h2 class="service_title">Educational</h2>
-          <p class="service_desc">Free UI templates, useful articles,
-            coding materials,awesome projects and
-            more are services we can offer. </p>
-          <button class="btn  read_more">Read more</button>
-        </div>
-      </div>
-
-    </section>
-    <section class="section projects" id="projects">
-      <div class="projects_header">
-        <h2 class="projects_title">Our projects</h2>
-        <ul class="socials_list">
-          <li class="socials_item"><a href="#" class="socials_link">
-              <i class="fa-brands fa-telegram fa-2xl"></i>
-            </a></li>
-          <li class="socials_item"><a href="#" class="socials_link">
-              <i class="fa-brands fa-youtube fa-2xl"></i>
-            </a></li>
-          <li class="socials_item"><a href="#" class="socials_link">
-              <i class="fa-brands fa-instagram fa-2xl"></i>
-            </a></li>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#home" class="header__nav-link">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#services" class="header__nav-link">Services</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#projects" class="header__nav-link">Projects</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#testimonials" class="header__nav-link">Testimonials</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#team" class="header__nav-link">Team</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#contacts" class="header__nav-link">Contact</a>
+          </li>
         </ul>
-      </div>
-      <hr class="projects_separator">
-      <ul class="project_filter-list">
-        <li class="project_filter-item filter ">Filters: </li>
-        <li class="project_filter-item">All </li>
-        <li class="project_filter-item">Latest </li>
-        <li class="project_filter-item">Design</li>
-        <li class="project_filter-item">Frontend</li>
-        <li class="project_filter-item">Backend</li>
-      </ul>
-      <div class="projects_list">
-        <div class="projects_item">
-          <img src="./assets/images/Rectangle 9.png" alt="project image" class="project_image">
-          <div class="project_texts">
-            <h3 class="project_title">React weather app</h3>
-            <p class="project_desc">
-              Beautiful weather app, you can see project link below. Created by Codium...
-            </p>
-            <div class="project_reaches">
-              <div>
-                <i class="fa-solid fa-eye"></i>1.1k
-              </div>
-              <a href="#" class="project_link">More...</a>
-            </div>
-          </div>
-        </div>
-        <div class="projects_item">
-
-          <img src="./assets/images/Rectangle 9.png" alt="project image" class="project_image">
-          <div class="project_texts">
-            <h3 class="project_title">React weather app</h3>
-            <p class="project_desc">
-              Beautiful weather app, you can see project link below. Created by Codium...
-            </p>
-            <div class="project_reaches">
-              <div>
-                <i class="fa-solid fa-eye"></i>1.1k
-
-              </div>
-              <a href="#" class="project_link">More...</a>
-            </div>
-          </div>
-        </div>
-        <div class="projects_item">
-          <img src="./assets/images/Rectangle 9.png" alt="project image" class="project_image">
-          <div class="project_texts">
-            <h3 class="project_title">React weather app</h3>
-            <p class="project_desc">
-              Beautiful weather app, you can see project link below. Created by Codium...
-            </p>
-            <div class="project_reaches">
-              <div>
-                <i class="fa-solid fa-eye"></i>1.1k
-              </div>
-              <a href="#" class="project_link">More...</a>
-
-            </div>
-          </div>
-        </div>
-        <div class="projects_item">
-          <img src="./assets/images/Rectangle 9.png" alt="project image" class="project_image">
-          <div class="project_texts">
-            <h3 class="project_title">React weather app</h3>
-            <p class="project_desc">
-              Beautiful weather app, you can see project link below. Created by Codium...
-            </p>
-            <div class="project_reaches">
-              <div>
-                <i class="fa-solid fa-eye"></i>1.1k
-
-              </div>
-              <a href="#" class="project_link">More...</a>
-
-            </div>
-          </div>
-        </div>
-        <div class="projects_item">
-          <img src="./assets/images/Rectangle 9.png" alt="project image" class="project_image">
-          <div class="project_texts">
-            <h3 class="project_title">React weather app</h3>
-            <p class="project_desc">
-              Beautiful weather app, you can see project link below. Created by Codium...
-            </p>
-            <div class="project_reaches">
-              <div>
-                <i class="fa-solid fa-eye"></i>1.1k
-
-              </div>
-              <a href="#" class="project_link">More...</a>
-
-            </div>
-          </div>
-        </div>
-        <div class="projects_item">
-          <img src="./assets/images/Rectangle 9.png" alt="project image" class="project_image">
-          <div class="project_texts">
-            <h3 class="project_title">React weather app</h3>
-            <p class="project_desc">
-              Beautiful weather app, you can see project link below. Created by Codium...
-            </p>
-            <div class="project_reaches">
-              <div>
-                <i class="fa-solid fa-eye"></i>1.1k
-              </div>
-              <a href="#" class="project_link">More...</a>
-            </div>
-          </div>
+      </nav>
+      <div class="header-signup__mode">
+        <button class="btn btn__dark">
+          <img src="./assets/images/dark-mode.svg" alt="mode changer " />
+        </button>
+        <div class="header__signup">
+          <img src="./assets/images/signup-img.svg" alt="signup image" />
+          Sign up
         </div>
       </div>
-      <div> <button class="project_load">Load more</button></div>
-    </section>
-    <section class="section testimonials" id="testimonials">
-      <h2 class="testimonials_title">Testimonials</h2>
-      <hr class="services_separator">
-      <p>Whats our clients say...</p>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="testimonial_card-wrapper">
-              <img src="./assets/images/testimonial.png" alt="testimonials">
-              <div class="testimonial_rewiev">
-                <h3 class="testimonial_title">Mrs. Alice</h3>
-                <div class="testimonial_stars">
-                  <span class="fa fa-star fa-2xl checked"></span>
-                  <span class="fa fa-star fa-2xl checked"></span>
-                  <span class="fa fa-star fa-2xl checked"></span>
-                  <span class="fa fa-star fa-2xl checked"></span>
-                  <span class="fa fa-star fa-2xl checked"></span>
+    </header>
+    <main>
+      <section class="section hero container">
+        <div class="hero__info">
+          <span> the </span>
+          <h2 class="hero__info-title">CODIUM TEAM</h2>
+          <p class="hero__info-desc">...we are strong community</p>
+        </div>
+        <button class="btn btn__blue btn__hero">ENTER</button>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+      </section>
+
+      <section class="section services container" id="services">
+        <h2 class="services__title">Our services</h2>
+        <hr class="services_separator" />
+        <ul class="services__list">
+          <li class="services__item">
+            <img
+              src="./assets/images/Design.svg"
+              alt="web design"
+              class="services_image"
+            />
+            <h2 class="services__item-title">Web design</h2>
+            <p class="services__item-desc">
+              You can hire web designer from our website. Design websites,
+              logos, business cards, presentations and more.
+            </p>
+            <button class="btn btn__blue read__more">Read more</button>
+          </li>
+
+          <li class="services__item">
+            <img
+              src="./assets/images/Web.svg"
+              alt="web development"
+              class="services_image"
+            />
+            <h2 class="services__item-title">Web Development</h2>
+            <p class="services__item-desc">
+              You can hire frontend or backend developers. We create functional
+              modern websites with popular technologies.
+            </p>
+            <button class="btn btn__blue read__more">Read more</button>
+          </li>
+
+          <li class="services__item">
+            <img
+              src="./assets/images/Bookmark.svg"
+              alt="web development"
+              class="services_image"
+            />
+            <h2 class="services__item-title">Educational</h2>
+            <p class="services__item-desc">
+              Free UI templates, useful articles, coding materials,awesome
+              projects and more are services we can offer.
+            </p>
+            <button class="btn btn__blue read__more">Read more</button>
+          </li>
+        </ul>
+      </section>
+      <section class="section projects container" id="projects">
+        <div class="projects__header">
+          <h2 class="projects__title">Our projects</h2>
+          <ul class="projects__social-list">
+            <li class="projects__socials-item">
+              <a href="#" class="projects__social-link pinterest">
+                <i class="fa-brands fa-pinterest fa-2xl"></i>
+              </a>
+            </li>
+            <li class="projects__socials-item">
+              <a href="#" class="projects__social-link telegram">
+                <i class="fa-brands fa-telegram fa-2xl"></i>
+              </a>
+            </li>
+            <li class="projects__socials-item">
+              <a href="#" class="projects__social-link youtube">
+                <i class="fa-brands fa-youtube fa-2xl"></i>
+              </a>
+            </li>
+            <li class="projects__socials-item">
+              <a href="#" class="projects__social-link instagram">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr class="projects_separator" />
+        <ul class="project__filter-list">
+          <li class="filter">Filter :</li>
+          <li class="project__filter-item active-work" data-filter="all">
+            All
+          </li>
+          <li class="project__filter-item" data-filter=".design">Design</li>
+          <li class="project__filter-item" data-filter=".frontend">Frontend</li>
+          <li class="project__filter-item" data-filter=".backend">Backend</li>
+        </ul>
+        <ul class="projects__list">
+          <li class="projects__item mix frontend">
+            <img
+              src="./assets/images/project.png"
+              alt="project image"
+              class="project__image"
+            />
+            <div class="project__info">
+              <h3 class="project__title">React weather app</h3>
+              <p class="project__desc">
+                Beautiful weather app, you can see project link below. Created
+                by Codium...
+              </p>
+              <div class="project__view">
+                <div><i class="fa-solid fa-eye"></i>1.1k</div>
+                <a href="#" class="project__link">More...</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item mix design">
+            <img
+              src="./assets/images/project.png"
+              alt="project image"
+              class="project__image"
+            />
+            <div class="project__info">
+              <h3 class="project__title">React weather app</h3>
+              <p class="project__desc">
+                Beautiful weather app, you can see project link below. Created
+                by Codium...
+              </p>
+              <div class="project__view">
+                <div><i class="fa-solid fa-eye"></i>1.1k</div>
+                <a href="#" class="project__link">More...</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item mix design">
+            <img
+              src="./assets/images/project.png"
+              alt="project image"
+              class="project__image"
+            />
+            <div class="project__info">
+              <h3 class="project__title">React weather app</h3>
+              <p class="project__desc">
+                Beautiful weather app, you can see project link below. Created
+                by Codium...
+              </p>
+              <div class="project__view">
+                <div><i class="fa-solid fa-eye"></i>1.1k</div>
+                <a href="#" class="project__link">More...</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item mix backend">
+            <img
+              src="./assets/images/project.png"
+              alt="project image"
+              class="project__image"
+            />
+            <div class="project__info">
+              <h3 class="project__title">React weather app</h3>
+              <p class="project__desc">
+                Beautiful weather app, you can see project link below. Created
+                by Codium...
+              </p>
+              <div class="project__view">
+                <div><i class="fa-solid fa-eye"></i>1.1k</div>
+                <a href="#" class="project__link">More...</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item mix frontend">
+            <img
+              src="./assets/images/project.png"
+              alt="project image"
+              class="project__image"
+            />
+            <div class="project__info">
+              <h3 class="project__title">React weather app</h3>
+              <p class="project__desc">
+                Beautiful weather app, you can see project link below. Created
+                by Codium...
+              </p>
+              <div class="project__view">
+                <div><i class="fa-solid fa-eye"></i>1.1k</div>
+                <a href="#" class="project__link">More...</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item mix backend">
+            <img
+              src="./assets/images/project.png"
+              alt="project image"
+              class="project__image"
+            />
+            <div class="project__info">
+              <h3 class="project__title">React weather app</h3>
+              <p class="project__desc">
+                Beautiful weather app, you can see project link below. Created
+                by Codium...
+              </p>
+              <div class="project__view">
+                <div><i class="fa-solid fa-eye"></i>1.1k</div>
+                <a href="#" class="project__link">More...</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn__project">Load more</button>
+      </section>
+      <section class="section testimonials container" id="testimonials">
+        <h2 class="services__title">Testimonial</h2>
+        <hr class="services_separator" />
+        <p class="testimonial__subtitle">Whats say our clients...</p>
+        <div class="testimonial__swiper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper mySwiper">
+            <ul class="testimonial__list swiper-wrapper">
+              <li class="testimonial__item swiper-slide">
+                <div class="testimonial__item-header">
+                  <img
+                    src="assets/images/pngwing.com.png"
+                    class="user__image"
+                    alt=""
+                  />
+                  <div class="testimonial__item-user">
+                    <h3>Nodir Aliyev</h3>
+                    <div class="testimonial__item-stars">
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                    </div>
+                  </div>
                 </div>
-
+                <div class="testimonial__item-body">
+                  <p>
+                    “ A really good job, all aspects of the project were
+                    followed step by step, thanks... “
+                  </p>
+                </div>
+              </li>
+              <li class="testimonial__item swiper-slide">
+                <div class="testimonial__item-header">
+                  <img
+                    src="assets/images/pngwing.com.png"
+                    class="user__image"
+                    alt=""
+                  />
+                  <div class="testimonial__item-user">
+                    <h3>Nodir Aliyev</h3>
+                    <div class="testimonial__item-stars">
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial__item-body">
+                  <p>
+                    “ A really good job, all aspects of the project were
+                    followed step by step, thanks... “
+                  </p>
+                </div>
+              </li>
+              <li class="testimonial__item swiper-slide">
+                <div class="testimonial__item-header">
+                  <img
+                    src="assets/images/pngwing.com.png"
+                    class="user__image"
+                    alt=""
+                  />
+                  <div class="testimonial__item-user">
+                    <h3>Nodir Aliyev</h3>
+                    <div class="testimonial__item-stars">
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial__item-body">
+                  <p>
+                    “ A really good job, all aspects of the project were
+                    followed step by step, thanks... “
+                  </p>
+                </div>
+              </li>
+              <li class="testimonial__item swiper-slide">
+                <div class="testimonial__item-header">
+                  <img
+                    src="assets/images/pngwing.com.png"
+                    class="user__image"
+                    alt=""
+                  />
+                  <div class="testimonial__item-user">
+                    <h3>Nodir Aliyev</h3>
+                    <div class="testimonial__item-stars">
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial__item-body">
+                  <p>
+                    “ A really good job, all aspects of the project were
+                    followed step by step, thanks... “
+                  </p>
+                </div>
+              </li>
+              <li class="testimonial__item swiper-slide">
+                <div class="testimonial__item-header">
+                  <img
+                    src="assets/images/pngwing.com.png"
+                    class="user__image"
+                    alt=""
+                  />
+                  <div class="testimonial__item-user">
+                    <h3>Nodir Aliyev</h3>
+                    <div class="testimonial__item-stars">
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                      <img src="assets/images/star.svg" alt="star" />
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial__item-body">
+                  <p>
+                    “ A really good job, all aspects of the project were
+                    followed step by step, thanks... “
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <form action="" class="testimonial__form">
+          <div class="input__group">
+            <div class="input__control">
+              <label for="name">Your Name</label>
+              <input type="text" required>
+            </div>
+            <div class="input__control">
+              <label for="rate">Rate</label>
+              <div class="input__rate">
+                <img src="assets/images/star.svg" alt="star">
+                <img src="assets/images/star.svg" alt="star">
+                <img src="assets/images/star.svg" alt="star">
+                <img src="assets/images/star.svg" alt="star">
+                <img src="assets/images/star.svg" alt="star">
               </div>
             </div>
-            <p class="testimonial_opinion">
-              “ A really good job, all aspects of the
-              project were followed step by step,
-              thanks... “
-            </p>
           </div>
-          <div class="swiper-slide">
+          <div class="input__group">
+            <div class="input__control">
+              <label for="text">Your Comment</label>
+              <input type="text" class="comment">
+            </div>
           </div>
-          <div class="swiper-slide">Slide 3</div>
-
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
-    <section class="section team" id="team"></section>
-    <section class="section contact" id="contacts"></section>
-  </main>
-  <footer class="container footer"></footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
-  <script src="./assets/js/app.js"></script>
-</body>
-
+        </form>
+      </section>
+      <section class="section team" id="team"></section>
+      <section class="section contact" id="contacts"></section>
+    </main>
+    <footer class="container footer"></footer>
+   </div>
+  </body>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </html>
