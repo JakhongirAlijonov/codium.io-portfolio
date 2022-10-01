@@ -139,6 +139,9 @@ body {
   font: 1.8rem;
   text-align: center;
 }
+.hero-enter{
+  text-decoration: none;
+}
 
 .btn__blue {
   background-color: #0099ff;
