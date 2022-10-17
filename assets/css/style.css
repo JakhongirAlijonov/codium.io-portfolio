@@ -693,7 +693,7 @@ body {
   display: block;
   margin: 0 auto;
 }
-/* @media screen  and (max-width:1210px){
+ @media screen  and (max-width:1210px){
   .services{
     height: unset;
     max-height: unset;
@@ -751,7 +751,7 @@ body {
     bottom: 0;
   }
 }
-@media screen and (max-width:900px) {
+/* @media screen and (max-width:900px) {
   .swiper{
     padding: 5rem;
   }
