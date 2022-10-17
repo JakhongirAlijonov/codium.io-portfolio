@@ -751,7 +751,7 @@ body {
     bottom: 0;
   }
 }
-/* @media screen and (max-width:900px) {
+ @media screen and (max-width:900px) {
   .swiper{
     padding: 5rem;
   }
@@ -901,4 +901,4 @@ body {
   .footer{
     display: grid;
   }
-} */
+} 
