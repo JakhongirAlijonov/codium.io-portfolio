@@ -24,9 +24,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-
   <body>
-   <div class="container-manual">
     <header class="container header">
       <a href="#" class="header__logo">
         <img src="./assets/images/site-logo.svg" alt="codium logo" />
@@ -124,9 +122,10 @@
           </li>
         </ul>
       </section>
+
       <section class="section projects container" id="projects">
         <div class="projects__header">
-          <h2 class="projects__title">Our projects</h2>
+          <h2 class="services__title">Our projects</h2>
           <ul class="projects__social-list">
             <li class="projects__socials-item">
               <a href="#" class="projects__social-link pinterest">
@@ -272,6 +271,7 @@
         </ul>
         <button class="btn btn__project">Load more</button>
       </section>
+
       <section class="section testimonials container" id="testimonials">
         <h2 class="services__title">Testimonial</h2>
         <hr class="services_separator" />
@@ -411,47 +411,192 @@
           <div class="swiper-button-next"></div>
         </div>
         <form action="" class="testimonial__form">
-          <div class="input__group">
+          <div class="input__group group-one">
             <div class="input__control">
               <label for="name">Your Name</label>
-              <input type="text" required>
+              <input type="text" required />
             </div>
             <div class="input__control">
               <label for="rate">Rate</label>
               <div class="input__rate">
-                <img src="assets/images/star.svg" alt="star">
-                <img src="assets/images/star.svg" alt="star">
-                <img src="assets/images/star.svg" alt="star">
-                <img src="assets/images/star.svg" alt="star">
-                <img src="assets/images/star.svg" alt="star">
+                <img src="assets/images/star.svg" alt="star" />
+                <img src="assets/images/star.svg" alt="star" />
+                <img src="assets/images/star.svg" alt="star" />
+                <img src="assets/images/star.svg" alt="star" />
+                <img src="assets/images/star.svg" alt="star" />
               </div>
             </div>
+            <button class="btn btn__blue">Send</button>
           </div>
-          <div class="input__group">
+          <div class="input__group group-two">
             <div class="input__control">
               <label for="text">Your Comment</label>
-              <input type="text" class="comment">
+              <textarea type="text" class="comment"></textarea>
             </div>
           </div>
         </form>
       </section>
-      <section class="section team" id="team"></section>
-      <section class="section contact" id="contacts"></section>
+
+      <section class="section team container" id="team">
+        <h2 class="services__title">Our services</h2>
+        <hr class="services_separator" />
+        <div class="team__content">
+          <div class="team__text">
+            <div class="qosh">
+              <img src="assets/images/‘’.svg" alt=""/>
+            </div>
+            <h2 class="team__text-title">
+              We are <br> Web developers team <br> from Uzbekistan.
+            </h2>
+          </div>
+          <div class="team__swiper">
+            <div class="swiper-button-prev2"></div>
+            <div class="swiper2 mySwiper2">
+              <ul class="team__list swiper-wrapper">
+                <li class="team__item swiper-slide">
+                  <div class="team__item-header">
+                    <img
+                      src="assets/images/Rectangle 23.jpg"
+                      class="member__img"
+                      alt="member"
+                    />
+                    <div class="member__social">
+                      <div class="member-icons">
+                        <img src="assets/images/tw.svg" alt="" />
+                        <img src="assets/images/tg.svg" alt="" />
+                        <img src="assets/images/gh.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__item-body">
+                    <h3 class="member__name">John David</h3>
+                    <p>Frontend dev</p>
+                  </div>
+                </li>
+                <li class="team__item swiper-slide">
+                  <div class="team__item-header">
+                    <img
+                      src="assets/images/Rectangle 23.jpg"
+                      class="member__img"
+                      alt="member"
+                    />
+                    <div class="member__social">
+                      <div class="member-icons">
+                        <img src="assets/images/tw.svg" alt="" />
+                        <img src="assets/images/tg.svg" alt="" />
+                        <img src="assets/images/gh.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__item-body">
+                    <h3 class="member__name">John David</h3>
+                    <p>Frontend dev</p>
+                  </div>
+                </li>
+                <li class="team__item swiper-slide">
+                  <div class="team__item-header">
+                    <img
+                      src="assets/images/Rectangle 23.jpg"
+                      class="member__img"
+                      alt="member"
+                    />
+                    <div class="member__social">
+                      <div class="member-icons">
+                        <img src="assets/images/tw.svg" alt="" />
+                        <img src="assets/images/tg.svg" alt="" />
+                        <img src="assets/images/gh.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__item-body">
+                    <h3 class="member__name">John David</h3>
+                    <p>Frontend dev</p>
+                  </div>
+                </li>
+
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-next2"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact container" id="contacts">
+        <h2 class="services__title">Contact with us</h2>
+        <hr class="services_separator" />
+        <div class="contact__img">
+          <h3>Send Message to CODIUM</h3>
+        </div>
+        <form action="" class="contact__form">
+          <div class="input__group group-one">
+            <div class="input__control">
+              <label for="name">Your Name</label>
+              <input type="text" required />
+            </div>
+            <div class="input__control">
+              <label for="name">Your Name</label>
+              <input type="text" required />
+            </div>
+            <button class="btn btn__blue">Send</button>
+          </div>
+          <div class="input__group group-two">
+            <div class="input__control">
+              <label for="text">Your Comment</label>
+              <textarea type="text" class="comment"></textarea>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
-    <footer class="container footer"></footer>
-   </div>
+    <footer class="container footer">
+      <div class="col-1">
+        <h2>THE CODIUM TEAM</h2>
+        <h3>Navigate to:</h3>
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Testimonials</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <img src="assets/images/logo.png" alt="">
+        <p>All rights reserved, 2022 <br> designed by CODIUM member</p>
+      </div>
+      <div class="col-3">
+        <h3>
+          FOLLOW US
+        </h3>
+        <div class="sol-box">
+          <ul class="projects__social-list">
+            <li class="projects__socials-item">
+              <a href="#" class="projects__social-link pinterest">
+                <i class="fa-brands fa-pinterest fa-2xl"></i>
+              </a>
+            </li>
+            <li class="projects__socials-item">
+              <a href="#" class="projects__social-link telegram">
+                <i class="fa-brands fa-telegram fa-2xl"></i>
+              </a>
+            </li>
+            <li class="projects__socials-item">
+              <a href="#" class="projects__social-link youtube">
+                <i class="fa-brands fa-youtube fa-2xl"></i>
+              </a>
+            </li>
+            <li class="projects__socials-item">
+              <a href="#" class="projects__social-link instagram">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/mixitup.min.js"></script>
   <script src="assets/js/app.js"></script>
